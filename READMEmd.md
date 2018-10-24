@@ -1,0 +1,10 @@
+这次根据上一次的作业做了简单的抠图      
+其中的核心代码是检验每个像素点的RGB值，如果在给定区间范围内则是绿色背景，应该用space.jpg覆盖绿色部分  
+刚开始想的是分别对三个通道的RGB值进行检验，即
+![](https://i.imgur.com/uD6uES1.png)
+但是做出来的效果并不是正确的 
+![](https://i.imgur.com/lmtwvpF.png)
+后来经过考虑，我们认为应该同时对三通道的RGB值进行检验判断，只有同时满足要求才能证明是绿色背景 
+![](https://i.imgur.com/J9VFKFk.png)
+结果正确 
+![](https://i.imgur.com/Mnudipw.png)
